@@ -25,40 +25,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
+        android:backgroundTint="@color/black"
+        android:colorAccent="#201717"
         android:ems="10"
         android:fontFamily="@font/adamina"
         android:hint="E-mail"
-        android:textColorHint="@color/black"
-        android:backgroundTint="@color/black"
-        android:colorAccent="#201717"
         android:inputType="textEmailAddress"
         android:textColor="#201717"
+        android:textColorHint="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:fontFamily="@font/adamina"
-        android:textColorHint="@color/black"
-        android:backgroundTint="@color/black"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textColorHint="@color/black"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -66,13 +66,13 @@
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:text="Entrar"
-        android:textColor="#FFFFFF"
+        android:textColor="#F6E1E1"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toStartOf="@+id/Cadastro"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -83,13 +83,13 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="158dp"
         android:layout_height="117dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
