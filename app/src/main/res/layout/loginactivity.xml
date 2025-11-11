@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="29dp"
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:text="Entrar"
@@ -75,24 +75,29 @@
         android:id="@+id/Cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="69dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:text="Registrar-se"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/entrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="158dp"
-        android:layout_height="117dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/Email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

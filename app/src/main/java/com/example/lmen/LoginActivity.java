@@ -32,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
 
         Entrar.setOnClickListener(v -> loginUsuario());
 
-        Cadastro.setOnClickListener(v -> registrarUsuario());
     }
 
     /*Verificação do login*/
@@ -60,25 +59,5 @@ public class LoginActivity extends AppCompatActivity {
                 });
     }
 
-    private void registrarUsuario() {
-        String email = Email.getText().toString();
-        String Senha = Password.getText().toString();
-
-        if (email.isEmpty() || Senha.isEmpty()) {
-            Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        mAuth.createUserWithEmailAndPassword(email, Senha)
-                .addOnCompleteListener(this, task -> {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(this, "Conta criada com sucesso!", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(this, "Erro ao registrar: " +
-                                task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                });
-
-    
-}}
+}
 

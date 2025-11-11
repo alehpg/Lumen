@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+   android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E8BE18"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo"
+
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,8 +25,8 @@
         android:fontFamily="@font/adamina"
         android:text="Cadastro de Usuário"
         android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/edtNome"
@@ -26,27 +36,8 @@
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:hint="Nome completo"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#000000"
-        android:fontFamily="@font/adamina"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/edtSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:backgroundTint="#000000"
-        android:fontFamily="@font/adamina"
-        android:hint="Senha"
-        android:inputType="textPassword" />
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/edtCpf"
@@ -57,17 +48,41 @@
         android:fontFamily="@font/adamina"
         android:hint="CPF"
         android:inputType="number"
-        android:maxLength="11" />
+        android:maxLength="11"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/black"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/adamina"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textColorHint="@color/black"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/adamina"
+        android:hint="Senha"
+        android:inputType="textPassword" />
 
 
     <Button
         android:id="@+id/btnCadastrar"
-        android:layout_width="match_parent"
+        android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#060906"
         android:fontFamily="@font/adamina"
         android:text="Cadastrar"
         android:textSize="20sp"
+        android:textStyle="bold"
         tools:textColor="#FBFBFB" />
 
 
