@@ -7,8 +7,8 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
-    @Override protected void onCreate(Bundle savedIntanceState){
-        super.onCreate(savedIntanceState);
+    @Override protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
         Handler handler = new Handler();
         handler.postDelayed(new Runnable(){
