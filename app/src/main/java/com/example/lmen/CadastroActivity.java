@@ -31,10 +31,11 @@ public class CadastroActivity extends AppCompatActivity {
         // Inicializar Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
 
-        btnCadastrar.setOnClickListener(v -> registrarUsuario());
+        btnCadastrar.setOnClickListener(v -> registrarUsuario());//chama o metado registrarUsusario
     }
 
     private void registrarUsuario() {
+        // ---------------------- COLETA DADOS ----------------------
         String nome = edtNome.getText().toString().trim();
         String cpf = edtCpf.getText().toString().trim();
         String email = edtEmail.getText().toString().trim();
