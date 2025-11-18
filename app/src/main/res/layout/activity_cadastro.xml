@@ -81,6 +81,7 @@
         android:backgroundTint="#060906"
         android:fontFamily="@font/adamina"
         android:text="Cadastrar"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:textColor="#FBFBFB" />

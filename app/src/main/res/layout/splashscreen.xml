@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D0D0D"
+    android:background="#000000"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
@@ -11,14 +11,14 @@
         android:id="@+id/logo"
         android:layout_width="220dp"
         android:layout_height="220dp"
-        android:src="@drawable/logo"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/playfair_display_black_italic"
+        android:fontFamily="@font/playfair_display_sc_bold"
         android:text="Lúmen"
         android:textColor="#E8BE18"
         android:textSize="54sp" />

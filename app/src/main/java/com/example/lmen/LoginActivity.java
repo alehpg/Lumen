@@ -2,6 +2,7 @@ package com.example.lmen;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -31,8 +32,13 @@ public class LoginActivity extends AppCompatActivity {
         Cadastro = findViewById(R.id.Cadastro);
 
         Entrar.setOnClickListener(v -> loginUsuario());
+        Cadastro.setOnClickListener(v -> {
+
+            startActivity(new Intent(LoginActivity.this, CadastroActivity.class));
+        });
 
     }
+
 
     /*Verificação do login*/
     private void loginUsuario() {
@@ -57,7 +63,15 @@ public class LoginActivity extends AppCompatActivity {
                                 task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
+
+
+
     }
+
+
+
+
+
 
 }
 
