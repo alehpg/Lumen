@@ -10,10 +10,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="115dp"
+        android:layout_width="146dp"
         android:layout_height="52dp"
         android:layout_marginTop="136dp"
-        android:fontFamily="@font/alegreya_sans_sc_black_italic"
+        android:fontFamily="@font/playfair_display_sc_bold"
         android:text="Lúmen"
         android:textAlignment="center"
         android:textColor="#000000"

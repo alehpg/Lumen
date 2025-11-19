@@ -56,13 +56,15 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {// se o login for bem sucedido
                         FirebaseUser user = mAuth.getCurrentUser();// pega o usuario atual
                         Toast.makeText(this, "Bem-vindo(a) " + user.getEmail(), Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(this, MainActivity.class));
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));// inicia a activity principal
                         finish();// finaliza a activity de login
                     } else {
                         Toast.makeText(this, "Falha no login: " +
                                 task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
+
+
 
 
 
