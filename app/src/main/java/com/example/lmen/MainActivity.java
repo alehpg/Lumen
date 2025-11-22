@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         lancamentos = new ArrayList<>();
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, lancamentos);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, lancamentos);
         listView.setAdapter(adapter);
 
         atualizarSaldo();

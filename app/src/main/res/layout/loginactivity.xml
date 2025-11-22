@@ -26,9 +26,11 @@
 
     <EditText
         android:id="@+id/Email"
+        style="@android:style/Widget.Holo.EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="368dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="316dp"
         android:backgroundTint="@color/black"
         android:colorAccent="#201717"
         android:ems="10"
@@ -38,24 +40,24 @@
         android:textColor="#201717"
         android:textColorHint="@color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/verSenha" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="35dp"
         android:backgroundTint="@color/black"
         android:ems="10"
         android:fontFamily="@font/adamina"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textColor="#000000"
         android:textColorHint="@color/black"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="@+id/verSenha"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
 
 
@@ -64,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="35dp"
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:text="Entrar"
@@ -77,29 +79,40 @@
         android:id="@+id/Cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginEnd="74dp"
         android:backgroundTint="#000000"
         android:fontFamily="@font/adamina"
         android:text="Registrar-se"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/entrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="122dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="13dp"
         app:layout_constraintBottom_toTopOf="@+id/Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.942"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/verSenha"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="48dp"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:icon="@drawable/olho"
+        app:iconTint="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
